@@ -1,0 +1,63 @@
+.navbar {
+    height: 60px;
+    // ${mobile({ height: "50px" })}
+
+    .Wrapper {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // ${mobile({ padding: "10px 0px" })}
+
+        .Left {
+            flex: 1;
+            display: flex;
+            align-items: center;
+
+            .Language {
+                font-size: 14px;
+                cursor: pointer;
+                //   ${mobile({ display: "none" })}
+            }
+
+            .SearchContainer {
+                border: 0.5px solid lightgray;
+                display: flex;
+                align-items: center;
+                margin-left: 25px;
+                padding: 5px;
+
+                .Input {
+                    border: none;
+                    //   ${mobile({ width: "50px" })}
+                }
+
+            }
+        }
+
+        .Center {
+            flex: 1;
+            text-align: center;
+
+            .Logo {
+                font-weight: bold;
+                //   ${mobile({ fontSize: "24px" })}
+            }
+        }
+
+        .Right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            // ${mobile({ flex: 2, justifyContent: "center" })}
+            .MenuItem {
+                font-size: 14px;
+                cursor: pointer;
+                margin-left: 25px;
+                // ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+            }
+        }
+    }
+}
